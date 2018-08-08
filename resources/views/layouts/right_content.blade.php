@@ -1,4 +1,11 @@
 <div class="col-lg-3 col-md-3">
+
+    <div class="row">
+      <center>
+        <img src="{{ url('images/ad/300x250.jpg') }}">
+      </center>
+    </div>
+
     <div class="row">
         <h4>Most Viewed</h4>
         <ol>
@@ -9,8 +16,8 @@
     <div class="row">
       <h4>Most Bookmarked</h4>
         <ol>
-                <li><a href="http://ebook.test/book/lorem-ipsum/view"> Lorem Ipsum</a></li>
-                <li><a href="http://ebook.test/book/new-book/view"> New Book</a></li>
+                <li><a href="http://ebook.test/book/lorem-ipsum/view"> Lorem Ipsum Lorem Ipsum</a></li>
+                <li><a href="http://ebook.test/book/new-book/view"> New Boo Lorem Ipsumk</a></li>
         </ol>
     </div>
 

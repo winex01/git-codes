@@ -38,7 +38,7 @@
 <div class="wrapper">
 
   <header class="main-header">
-    <nav class="navbar navbar-static-top">
+    <nav class="navbar navbar-stati-ctop">
       <div class="container">
         <div class="navbar-header">
           <a href="http://ebook.test" class="navbar-brand"><b>E</b>-Book Archives</a>
@@ -78,15 +78,35 @@
   </header>
 
 
+
+
   <!-- Full Width Column -->
   <div class="content-wrapper">
-    <div class="container">
 
+    <div class="container">
         <!-- Main content -->
         <section class="content">
             <div class="row">
                 <div class="col-lg-9 col-md-9">
-                  @yield('content')     
+                  @yield('content')
+                  <center>
+                    <ul class="pagination pagination-lg">
+                      <li><a href="#">&laquo;</a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">&raquo;</a></li>
+                    </ul>
+                  </center>
+
+
+                  <center>
+                      <img src="{{ url('images/ad/336x280.jpg') }}">
+                      <img src="{{ url('images/ad/336x280.jpg') }}">
+                  </center>
+
                 </div>
                 @include('layouts.right_content');
             </div>
