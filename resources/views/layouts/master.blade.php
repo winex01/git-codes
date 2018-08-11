@@ -12,26 +12,7 @@
 
   <link rel="icon" href="http://ebook.test/uploads/book-icon.png">
 
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="http://ebook.test/adminlte/bootstrap/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-
-  
-  <link rel="stylesheet" href="http://ebook.test/datatables/css/datatables.bootstrap.css">
-
-  <link rel="stylesheet" href="http://ebook.test/adminlte/font-awesome/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="http://ebook.test/adminlte/Ionicons/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="http://ebook.test/adminlte/dist/css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="http://ebook.test/adminlte/dist/css/skins/_all-skins.min.css">
-
-  
-  <link rel="stylesheet" href="http://ebook.test/css/searchbar.css">
+  @include('layouts.header_scripts')
 
 </head>
 <body class="hold-transition skin-blue layout-top-nav">
@@ -123,44 +104,7 @@
 </div>
 <!-- ./wrapper -->
 
-
-<!-- jQuery 2.2.3 -->
-<script src="http://ebook.test/adminlte/plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="http://ebook.test/adminlte/bootstrap/js/bootstrap.min.js"></script>
-
-<script src="http://ebook.test/js/custom.js"></script>
-
-
-
-<script src="http://ebook.test/datatables/js/jquery.dataTables.min.js"></script>
-
-
-<script src="http://ebook.test/datatables/js/datatables.bootstrap.js"></script>
-
-
-<!-- SlimScroll -->
-<script src="http://ebook.test/adminlte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="http://ebook.test/adminlte/plugins/fastclick/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="http://ebook.test/adminlte/dist/js/app.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-
-
-
-<script src="http://ebook.test/js/jquery-ui.js"></script>
-
-<script type="text/javascript">
-    $(function() {
-      $("#search-bar").autocomplete({
-        source: 'http://ebook.test/search/autocomplete',
-      });
-    });
-</script>
-  <script>
-      $('#flash-overlay-modal').modal();
-  </script>
+@include('layouts.footer_scripts')
 
 </body>
 </html>
