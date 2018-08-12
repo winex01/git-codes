@@ -8,9 +8,9 @@
   
   <meta name="_token" content="ihxnr0qfxkKuafcqpf3osuHIvio17qfokFQnXrgo" />
 
-  <title>Project Title</title>
+  <title>{{ env('APP_NAME') }}</title>
 
-  <link rel="icon" href="http://ebook.test/uploads/book-icon.png">
+  {{-- <link rel="icon" href="http://ebook.test/uploads/book-icon.png"> --}}
 
   @include('layouts.header_scripts')
 
@@ -22,7 +22,7 @@
     <nav class="navbar navbar-stati-ctop">
       <div class="container">
         <div class="navbar-header">
-          <a href="http://ebook.test" class="navbar-brand"><b>E</b>-Book Archives</a>
+          <a href="http://ebook.test" class="navbar-brand">{{ env('APP_NAME') }}</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
