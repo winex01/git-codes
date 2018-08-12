@@ -1,9 +1,13 @@
 <div class="col-lg-3 col-md-3">
 
+
     <div class="row">
-        <h4>Submit Code Now</h4>
+        <button type="button" class="btn btn-lg btn-warning btn-block">Submit Project Now
+          <span class="fa fa-cloud-upload" aria-hidden="true"></span>
+        </button>
     </div>
 
+    <br />
 
     <div class="row">
       <center>
