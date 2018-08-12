@@ -25,7 +25,7 @@
           </p>
 
           <p>
-            <a href="http://ebook.test/book/new-book/view" class="btn btn-primary btn-xs">View Project
+            <a href="http://ebook.test/book/new-book/view" class="btn btn-primary btn-xs">View More
             <i class="fa fa-chevron-right"></i>
             </a>
 
@@ -77,7 +77,7 @@
           </p>
 
           <p>
-            <a href="http://ebook.test/book/new-book/view" class="btn btn-primary btn-xs">View Project
+            <a href="http://ebook.test/book/new-book/view" class="btn btn-primary btn-xs">View More
             <i class="fa fa-chevron-right"></i>
             </a>
 

@@ -2,7 +2,7 @@
 
 
     <div class="row">
-        <button type="button" class="btn btn-lg btn-warning btn-block">Submit Project Now
+        <button type="button" class="btn btn-lg btn-warning btn-block">Submit Code Now
           <span class="fa fa-cloud-upload" aria-hidden="true"></span>
         </button>
     </div>
