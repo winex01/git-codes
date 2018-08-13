@@ -22,7 +22,7 @@
     <nav class="navbar navbar-stati-ctop">
       <div class="container">
         <div class="navbar-header">
-          <a href="http://ebook.test" class="navbar-brand">{{ env('APP_NAME') }}</a>
+          <a href="{{ url('/') }}" class="navbar-brand">{{ env('APP_NAME') }}</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active ">
-              <a href="http://ebook.test">
+              <a href="#">
                 <i class="fa fa-home"></i>
                 Home
               </a>
@@ -44,12 +44,16 @@
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
           <ul class="nav navbar-nav">
-                   <li>
-                      <a href="http://ebook.test/home">
-                        <i class="fa fa-user"></i>
-                          Test
-                      </a>
-                   </li>
+              @auth
+                  {{-- // The user is authenticated... --}}
+                  <li> <a href="http://ebook.test/home"> <i class="fa fa-user"></i> Winnie </a> </li>
+              @endauth
+
+              @guest
+                  {{-- // The user is not authenticated... --}}
+                  <li> <a href="{{ route('login') }}"> <i class="fa fa-sign-in"></i> Login </a> </li>
+                  <li> <a href="{{ route('register') }}"> <i class="fa fa-user-plus"></i> Register </a> </li>
+              @endguest
           </ul>
         </div>
         <!-- /.navbar-custom-menu -->
@@ -70,19 +74,7 @@
             <div class="row">
                 <div class="col-lg-9 col-md-9">
                   @yield('content')
-                  <center>
-                    <ul class="pagination pagination-lg">
-                      <li><a href="#">&laquo;</a></li>
-                      <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">&raquo;</a></li>
-                    </ul>
-                  </center>
-
-
+      
                   <center>
                       <img src="{{ url('images/ad/336x280.jpg') }}">
                       <img src="{{ url('images/ad/336x280.jpg') }}">
