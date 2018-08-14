@@ -52,6 +52,7 @@
 	                <div class="col-md-8 col-md-offset-4">
 	                    <button type="submit" class="btn btn-primary">
                             {{ __('Login') }}
+                            <span class="fa fa-sign-in" aria-hidden="true"></span>
                         </button>
 
 	                    <a class="btn btn-link" href="{{ route('password.request') }}">
